@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Primary Meta Tags -->
+    <title>Double Dutch Bakery | Artisan Bakery & Specialty Coffee in Kensington, Melbourne</title>
+    <meta name="title" content="Double Dutch Bakery | Artisan Bakery & Specialty Coffee in Kensington, Melbourne">
+    <meta name="description" content="Double Dutch Bakery is a community bakery café in Kensington, Melbourne, created in partnership with Rumble Coffee Roasters. Fresh bread, delicious sandwiches, pastries and specialty coffee.">
+    <meta name="keywords" content="Double Dutch Bakery, bakery Kensington, Melbourne bakery, specialty coffee Kensington, Rumble Coffee, artisan bread Melbourne, sandwiches Melbourne, fresh pastries">
+    <meta name="author" content="Double Dutch Bakery">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="business.business">
+    <meta property="og:url" content="https://www.doubledutchbakery.com.au/">
+    <meta property="og:title" content="Double Dutch Bakery | Artisan Bakery & Specialty Coffee in Kensington">
+    <meta property="og:description" content="Fresh baked goods, delicious sandwiches and specialty coffee from Rumble Coffee Roasters. Visit us at 61 Stubbs Street, Kensington.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=1200&q=80">
+    <meta property="og:locale" content="en_AU">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.doubledutchbakery.com.au/">
+    <meta property="twitter:title" content="Double Dutch Bakery | Artisan Bakery & Specialty Coffee in Kensington">
+    <meta property="twitter:description" content="Fresh baked goods, delicious sandwiches and specialty coffee. Community bakery café in Kensington, Melbourne.">
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=1200&q=80">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://www.doubledutchbakery.com.au/">
+
+    <!-- Favicon (placeholder) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥐</text></svg>">
+
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Security: Basic Content Security Policy (adjust for production) -->
+    <!-- IMPORTANT: For production, move this to HTTP headers and remove 'unsafe-inline' by externalizing JS -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https://images.unsplash.com data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; frame-src https://www.google.com/maps https://maps.google.com;">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+
+    <style>
+        :root {
+            --brown-dark: #4A2C2A;
+            --brown-light: #6B4F4A;
+            --cream: #F9F5F0;
+            --terracotta: #C96F4A;
+            --gold: #D4A017;
+            --dark-text: #2C2C2C;
+            --muted: #6E6E6E;
+            --white: #FFFFFF;
+            --shadow: 0 8px 30px rgba(0,0,0,0.08);
+            --transition: all 0.3s ease;
+            --radius: 12px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: var(--dark-text);
+            background: var(--white);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            line-height: 1.2;
+            color: var(--brown-dark);
+        }
+
+        a {
+            color: var(--terracotta);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        a:hover {
+            color: var(--gold);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section-padding {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 3px;
+            background: var(--terracotta);
+            margin: 15px auto 0;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: var(--muted);
+            margin-bottom: 3rem;
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 32px;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            border: none;
+            transition: var(--transition);
+            text-align: center;
+            font-size: 1rem;
+            letter-spacing: 0.5px;
+        }
+
+        .btn-primary {
+            background: var(--terracotta);
+            color: var(--white);
+        }
+
+        .btn-primary:hover {
+            background: #b85c3a;
+            color: var(--white);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(201,111,74,0.3);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--brown-dark);
+            border: 2px solid var(--brown-dark);
+        }
+
+        .btn-secondary:hover {
+            background: var(--brown-dark);
+            color: var(--white);
+            transform: translateY(-2px);
+        }
+
+        .btn-outline-light {
+            background: transparent;
+            color: var(--white);
+            border: 2px solid var(--white);
+        }
+
+        .btn-outline-light:hover {
+            background: var(--white);
+            color: var(--brown-dark);
+        }
+
+        /* Utility class for screen readers */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(255,255,255,0.98);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            z-index: 1000;
+            padding: 15px 0;
+            transition: var(--transition);
+        }
+
+        header.scrolled {
+            padding: 10px 0;
+            background: rgba(255,255,255,1);
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--brown-dark);
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: var(--terracotta);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            color: var(--dark-text);
+            font-weight: 600;
+            position: relative;
+        }
+
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--terracotta);
+            transition: var(--transition);
+        }
+
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+
+        .mobile-toggle {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            z-index: 1001;
+        }
+
+        .mobile-toggle span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background: var(--brown-dark);
+            margin: 5px 0;
+            transition: var(--transition);
+            border-radius: 2px;
+        }
+
+        .mobile-toggle.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+        .mobile-toggle.active span:nth-child(2) {
+            opacity: 0;
+        }
+        .mobile-toggle.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
+
+        /* Hero */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            background: linear-gradient(rgba(74,44,42,0.7), rgba(74,44,42,0.7)), url('https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+            color: var(--white);
+            padding: 120px 0 80px;
+        }
+
+        .hero-content {
+            max-width: 700px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            color: var(--white);
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            color: rgba(255,255,255,0.9);
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        /* Story */
+        .story {
+            background: var(--cream);
+        }
+
+        .story-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .story-text h3 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .story-text p {
+            margin-bottom: 1rem;
+            color: var(--muted);
+        }
+
+        .story-image img {
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+        }
+
+        /* Menu */
+        .menu {
+            background: var(--white);
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .menu-card {
+            background: var(--cream);
+            border-radius: var(--radius);
+            padding: 30px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .menu-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+        }
+
+        .menu-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--terracotta);
+        }
+
+        .menu-item {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed #ddd;
+        }
+
+        .menu-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+
+        .menu-item-name {
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+
+        .menu-item-desc {
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
+
+        .menu-note {
+            text-align: center;
+            margin-top: 2rem;
+            color: var(--muted);
+            font-style: italic;
+        }
+
+        /* Coffee */
+        .coffee {
+            background: var(--cream);
+        }
+
+        .coffee-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .coffee-text h3 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .coffee-text p {
+            margin-bottom: 1rem;
+            color: var(--muted);
+        }
+
+        .coffee-image img {
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+        }
+
+        .coffee-highlight {
+            background: var(--white);
+            padding: 20px;
+            border-radius: var(--radius);
+            margin-top: 1.5rem;
+            box-shadow: var(--shadow);
+        }
+
+        .coffee-highlight h4 {
+            color: var(--terracotta);
+            margin-bottom: 10px;
+        }
+
+        /* Gallery */
+        .gallery {
+            background: var(--white);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-item {
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            aspect-ratio: 1 / 1;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        /* Contact / Location */
+        .contact {
+            background: var(--cream);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: stretch;
+        }
+
+        .map-container {
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            min-height: 400px;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            min-height: 400px;
+        }
+
+        .info-hours {
+            background: var(--white);
+            padding: 30px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+        }
+
+        .info-hours h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        .hours-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .hours-item:last-child {
+            border-bottom: none;
+        }
+
+        .transport-info {
+            margin-top: 20px;
+        }
+
+        .transport-info p {
+            margin-bottom: 10px;
+        }
+
+        .contact-form {
+            background: var(--white);
+            padding: 40px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--brown-dark);
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid #ddd;
+            border-radius: var(--radius);
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--terracotta);
+            box-shadow: 0 0 0 3px rgba(201,111,74,0.2);
+        }
+
+        .form-group .error-message {
+            color: red;
+            font-size: 0.85rem;
+            margin-top: 5px;
+            display: none;
+        }
+
+        .form-group.has-error input,
+        .form-group.has-error textarea {
+            border-color: red;
+        }
+
+        .form-group.has-error .error-message {
+            display: block;
+        }
+
+        .honeypot {
+            position: absolute;
+            left: -9999px;
+            opacity: 0;
+            height: 0;
+            width: 0;
+            overflow: hidden;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            background: var(--brown-dark);
+            color: var(--white);
+            border-radius: 50%;
+            font-size: 1.2rem;
+            transition: var(--transition);
+        }
+
+        .social-links a:hover {
+            background: var(--terracotta);
+            transform: translateY(-3px);
+        }
+
+        .newsletter-box {
+            background: var(--brown-dark);
+            color: var(--white);
+            padding: 30px;
+            border-radius: var(--radius);
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .newsletter-box h3 {
+            color: var(--white);
+            margin-bottom: 10px;
+        }
+
+        .newsletter-form {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .newsletter-form input {
+            flex: 1;
+            padding: 12px 16px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1rem;
+        }
+
+        .newsletter-form button {
+            background: var(--terracotta);
+            color: var(--white);
+            border: none;
+            border-radius: 50px;
+            padding: 12px 25px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .newsletter-form button:hover {
+            background: #b85c3a;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--brown-dark);
+            color: rgba(255,255,255,0.8);
+            padding: 40px 0;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .footer-links h5 {
+            color: var(--white);
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links ul li {
+            margin-bottom: 8px;
+        }
+
+        .footer-links ul li a {
+            color: rgba(255,255,255,0.8);
+        }
+
+        .footer-links ul li a:hover {
+            color: var(--terracotta);
+        }
+
+        .copyright {
+            text-align: center;
+            border-top: 1px solid rgba(255,255,255,0.2);
+            padding-top: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* Back to Top */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: var(--terracotta);
+            color: var(--white);
+            border: none;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            transition: var(--transition);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 999;
+        }
+
+        .back-to-top:hover {
+            background: var(--brown-dark);
+        }
+
+        .back-to-top.show {
+            display: flex;
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .story-grid,
+            .coffee-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 250px;
+                height: 100vh;
+                background: var(--white);
+                flex-direction: column;
+                padding: 80px 30px 30px;
+                gap: 20px;
+                box-shadow: -2px 0 15px rgba(0,0,0,0.1);
+                transition: right 0.3s ease;
+            }
+
+            nav ul.active {
+                right: 0;
+            }
+
+            .mobile-toggle {
+                display: block;
+            }
+
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .newsletter-form {
+                flex-direction: column;
+            }
+
+            .menu-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .section-padding {
+                padding: 60px 0;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+
+            .btn {
+                padding: 12px 25px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-inner">
+            <a href="#" class="logo" aria-label="Double Dutch Bakery home">Double <span>Dutch</span> Bakery</a>
+            <nav aria-label="Main navigation">
+                <ul id="nav-menu">
+                    <li><a href="#story">Story</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#coffee">Coffee</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <h1>Welcome to Double Dutch Bakery.</h1>
+            <p>We are a community bakery cafe created in partnership with Rumble Coffee Roasters. We bake fresh every morning and source our ingredients locally. Our coffee is roasted a street away, and our goal is to bring the best baked goods that Melbourne has to offer, to the inner-west.</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary">View Menu</a>
+                <a href="#contact" class="btn btn-outline-light">Visit Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story -->
+    <section class="story section-padding" id="story">
+        <div class="container">
+            <h2 class="section-title">The Story</h2>
+            <p class="section-subtitle">How Double Dutch Bakery came to be</p>
+            <div class="story-grid">
+                <div class="story-text">
+                    <h3>From a question to a community icon</h3>
+                    <p>Double Dutch Bakery began with the team at Rumble Coffee asking the question: 'What if we opened a bakery?' The dreaming started (as did the pastry tasting) and pretty soon, this harebrained scheme brought forth Melbourne's most exciting new bakery.</p>
+                    <p>Double Dutch Bakery was born.</p>
+                    <p>Double Dutch Bakery exists not only to be one of Melbourne's best bakeries but also to create a warm, welcoming and down-to-earth haven where the Kensington community can gather, and taste buds rejoice in the delicious harmony of fresh-baked bread, delicious sandwiches, and the best specialty coffee that Melbourne has to offer.</p>
+                </div>
+                <div class="story-image">
+                    <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=800&q=80" alt="Freshly baked artisan bread and pastries at Double Dutch Bakery" loading="lazy" decoding="async">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu -->
+    <section class="menu section-padding" id="menu">
+        <div class="container">
+            <h2 class="section-title">Menu</h2>
+            <p class="section-subtitle">Our sangas & baked goods</p>
+            <div class="menu-grid">
+                <!-- Savoury items (Sandwiches & baked savoury) -->
+                <div class="menu-card">
+                    <h3>Sangas & Savoury</h3>
+                    <div class="menu-item">
+                        <div class="menu-item-name">Bacon and Egg Roll</div>
+                        <div class="menu-item-desc">Streaky bacon, scrambled egg, cheese and a house-made smoky tomato relish on a buttermilk roll.</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-name">BLT</div>
+                        <div class="menu-item-desc">Streaky bacon, cos lettuce and tomato with a house made fermented chilli mayo served on our wholegrain sourdough.</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-name">Curried Chickpea Smash</div>
+                        <div class="menu-item-desc">Spiced chickpea salad with a house made vegan mayo, rocket, tomato, pickled red onion and zucchini on our seeded sourdough.</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-name">Wagyu Reuben</div>
+                        <div class="menu-item-desc">Wagyu corned beef from Mathews Artisan Butchers, gruyere cheese, sauerkraut, house-made Russian dressing and pickles, on our light rye sourdough.</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-name">Roast Chicken Salad</div>
+                        <div class="menu-item-desc">Roast chicken salad, cos lettuce and tomato on our seeded sourdough.</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-name">Hamwich</div>
+                        <div class="menu-item-desc">Mathews Artisan Butchers “Christmas Ham”, fior di latte, cos lettuce, pickles and a house-made honey mustard dijionaise on our wholegrain sourdough.</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-name">Stubbs St. Sanga</div>
+                        <div class="menu-item-desc">Hot Sopressa, Mozzarella, rocket and our house-made fermented chilli jam on our herb focaccia.</div>
+                    </div>
+                </div>
+                <!-- Sweet treats -->
+                <div class="menu-card">
+                    <h3>Sweet Treats</h3>
+                    <div class="menu-item">
+                        <div class="menu-item-name">Salted Caramel Brownie</div>
+                        <div class="menu-item-desc">Rich chocolate brownie made with Hunted + Gathered chocolate, pockets of house-made salted caramel.</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-name">Dutch Pull Apart Bun</div>
+                        <div class="menu-item-desc">Traditional Dutch speculaas spices, pearl sugar, croissant dough.</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-name">Chocolate Chip Cookie</div>
+                        <div class="menu-item-desc">Hunted and Gathered chocolate chips, wholegrain flour based cookies.</div>
+                    </div>
+                </div>
+            </div>
+            <p class="menu-note">Please note we have a seasonal, and rotational menu, and not all items are listed on our website. The items listed above are some of our staples. We often sell out early, and cannot guarantee availability of any items.</p>
+        </div>
+    </section>
+
+    <!-- Coffee -->
+    <section class="coffee section-padding" id="coffee">
+        <div class="container">
+            <h2 class="section-title">Coffee</h2>
+            <p class="section-subtitle">Specialty coffee from Rumble Coffee Roasters</p>
+            <div class="coffee-grid">
+                <div class="coffee-text">
+                    <h3>Our coffee philosophy</h3>
+                    <p>Double Dutch Bakery is a partnership with Melbourne coffee roastery, Rumble Coffee Roasters. All our coffee is roasted by Rumble, and their commitment to roasting the finest specialty coffee means that Double Dutch is not only your bakery destination, it's also one of the best places to experience the most delicious coffee in Melbourne's coffee scene.</p>
+                    <p>Our coffee team is headed up by Luke, who has worked in and managed some of the best coffee shops across the globe, as well as having roasted for Rumble Coffee Roasters. Luke's commitment to making Double Dutch Bakery the go-to place for Melbourne's best coffee is unparalleled.</p>
+                    <div class="coffee-highlight">
+                        <h4>House Blend & Single Origins</h4>
+                        <p>We use Rumble Coffee's Haymaker blend as our house blend, as well as their range of rotating single origins for espresso and filter coffee.</p>
+                    </div>
+                    <div class="coffee-highlight">
+                        <h4>Take Home Beans</h4>
+                        <p>We stock a large selection of Rumble’s coffee to take home. To save on packaging, bring your own container and we’ll charge you by the kilo. You even get a 10 percent discount if you BYO container.</p>
+                    </div>
+                </div>
+                <div class="coffee-image">
+                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80" alt="Specialty coffee being brewed at Double Dutch Bakery" loading="lazy" decoding="async">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery section-padding" id="gallery">
+        <div class="container">
+            <h2 class="section-title">Gallery</h2>
+            <p class="section-subtitle">A taste of what we bake and brew</p>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=600&q=80" alt="Artisan bread and pastries" loading="lazy" decoding="async">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80" alt="Bakery display with fresh bread" loading="lazy" decoding="async">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&q=80" alt="Coffee brewing" loading="lazy" decoding="async">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=600&q=80" alt="Salted caramel brownie" loading="lazy" decoding="async">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1519676867240-f03562e64548?auto=format&fit=crop&w=600&q=80" alt="Sandwich on sourdough" loading="lazy" decoding="async">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1608198093002-ad4e6b7b7d9e?auto=format&fit=crop&w=600&q=80" alt="Croissant and coffee" loading="lazy" decoding="async">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Location -->
+    <section class="contact section-padding" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact & Location</h2>
+            <p class="section-subtitle">Come visit us in Kensington</p>
+            <div class="contact-grid">
+                <div class="map-container">
+                    <!-- Replace with exact Google Maps embed for 61 Stubbs Street, Kensington VIC -->
+                    <iframe src="https://maps.google.com/maps?q=61%20Stubbs%20Street%2C%20Kensington%2C%20VIC%2C%20Australia&t=&z=15&ie=UTF8&iwloc=&output=embed" title="Double Dutch Bakery location map" loading="lazy" allowfullscreen></iframe>
+                </div>
+                <div class="info-hours">
+                    <h3>Visit Us</h3>
+                    <div class="transport-info">
+                        <p><strong>Address:</strong> 61 Stubbs Street, Kensington, VIC</p>
+                        <p><strong>Email:</strong> <a href="mailto:hello@doubledutchbakery.com.au">hello@doubledutchbakery.com.au</a></p>
+                    </div>
+                    <h3 style="margin-top: 20px;">Opening Hours</h3>
+                    <div class="hours-item">
+                        <span>Monday - Friday</span>
+                        <span>7:00 AM – 2:00 PM</span>
+                    </div>
+                    <div class="hours-item">
+                        <span>Saturday</span>
+                        <span>8:30 AM – 2:00 PM</span>
+                    </div>
+                    <div class="hours-item">
+                        <span>Sunday</span>
+                        <span>9:00 AM – 1:00 PM</span>
+                    </div>
+                    <div class="transport-info" style="margin-top: 20px;">
+                        <p><strong>Parking:</strong> Limited street parking available on Stubbs Street and surrounding side streets.</p>
+                        <p><strong>Public Transport:</strong> Kensington Station is a short walk away. Tram routes 57 and 82 stop nearby.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 50px;">
+                <div class="contact-form">
+                    <h3 style="margin-bottom: 20px;">Send us a message</h3>
+                    <form id="contact-form" novalidate>
+                        <!-- Honeypot anti-spam -->
+                        <div class="honeypot" aria-hidden="true">
+                            <label for="website">Leave this field empty</label>
+                            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required autocomplete="name" placeholder="Your name">
+                            <span class="error-message" id="name-error">Please enter your name.</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required autocomplete="email" placeholder="you@example.com">
+                            <span class="error-message" id="email-error">Please enter a valid email address.</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="How can we help?"></textarea>
+                            <span class="error-message" id="message-error">Please enter a message.</span>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                <input type="checkbox" id="consent" name="consent" required>
+                                I consent to Double Dutch Bakery storing my information to respond to my enquiry. *
+                            </label>
+                            <span class="error-message" id="consent-error">Please provide consent.</span>
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="submit-btn">Send Message</button>
+                        <p id="form-feedback" style="margin-top: 15px; font-weight: 600;" aria-live="polite"></p>
+                    </form>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="newsletter-box">
+                    <h3>Join Our Newsletter</h3>
+                    <p>Get updates on new menu items, coffee releases and special events.</p>
+                    <form id="newsletter-form" class="newsletter-form" novalidate>
+                        <label for="newsletter-email" class="sr-only">Email address</label>
+                        <input type="email" id="newsletter-email" placeholder="Your email address" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                    <p id="newsletter-feedback" style="margin-top: 10px; font-weight: 600;" aria-live="polite"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-links">
+                    <h5>Double Dutch Bakery</h5>
+                    <ul>
+                        <li><a href="#story">Our Story</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#coffee">Coffee</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Location & Hours</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h5>Contact</h5>
+                    <ul>
+                        <li><a href="mailto:hello@doubledutchbakery.com.au">hello@doubledutchbakery.com.au</a></li>
+                        <li>61 Stubbs Street, Kensington VIC</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; <span id="year"></span> Double Dutch Bakery. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Bakery",
+        "name": "Double Dutch Bakery",
+        "image": "https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://www.doubledutchbakery.com.au",
+        "telephone": "",
+        "email": "hello@doubledutchbakery.com.au",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "61 Stubbs Street",
+            "addressLocality": "Kensington",
+            "addressRegion": "VIC",
+            "postalCode": "3031",
+            "addressCountry": "AU"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": -37.7926,
+            "longitude": 144.9290
+        },
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "07:00",
+                "closes": "14:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Saturday",
+                "opens": "08:30",
+                "closes": "14:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Sunday",
+                "opens": "09:00",
+                "closes": "13:00"
+            }
+        ],
+        "servesCuisine": "Bakery, Coffee, Sandwiches",
+        "priceRange": "$$",
+        "acceptsReservations": "False"
+    }
+    </script>
+
+    <!-- Main JavaScript -->
+    <script>
+        (function() {
+            'use strict';
+
+            // Mobile menu toggle
+            const mobileToggle = document.getElementById('mobile-toggle');
+            const navMenu = document.getElementById('nav-menu');
+
+            mobileToggle.addEventListener('click', function() {
+                navMenu.classList.toggle('active');
+                mobileToggle.classList.toggle('active');
+                const expanded = navMenu.classList.contains('active');
+                mobileToggle.setAttribute('aria-expanded', expanded);
+            });
+
+            // Close mobile menu on link click
+            navMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navMenu.classList.remove('active');
+                    mobileToggle.classList.remove('active');
+                    mobileToggle.setAttribute('aria-expanded', 'false');
+                });
+            });
+
+            // Header shadow on scroll
+            const header = document.getElementById('header');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+
+            // Back to top
+            const backToTop = document.getElementById('back-to-top');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 300) {
+                    backToTop.classList.add('show');
+                } else {
+                    backToTop.classList.remove('show');
+                }
+            });
+            backToTop.addEventListener('click', function() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+
+            // Contact form validation (client-side)
+            const contactForm = document.getElementById('contact-form');
+            const formFeedback = document.getElementById('form-feedback');
+
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                formFeedback.textContent = '';
+
+                // Reset errors
+                const groups = contactForm.querySelectorAll('.form-group');
+                groups.forEach(group => {
+                    group.classList.remove('has-error');
+                    const input = group.querySelector('input, textarea');
+                    if (input) input.removeAttribute('aria-invalid');
+                    if (input) input.removeAttribute('aria-describedby');
+                });
+
+                const name = document.getElementById('name').value.trim();
+                const email = document.getElementById('email').value.trim();
+                const message = document.getElementById('message').value.trim();
+                const consent = document.getElementById('consent').checked;
+                const honeypot = document.getElementById('website').value;
+
+                let isValid = true;
+
+                // Honeypot check
+                if (honeypot !== '') {
+                    // Silently reject (bot)
+                    return;
+                }
+
+                if (name === '') {
+                    const group = document.getElementById('name').closest('.form-group');
+                    group.classList.add('has-error');
+                    document.getElementById('name').setAttribute('aria-invalid', 'true');
+                    document.getElementById('name').setAttribute('aria-describedby', 'name-error');
+                    isValid = false;
+                }
+
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (email === '' || !emailRegex.test(email)) {
+                    const group = document.getElementById('email').closest('.form-group');
+                    group.classList.add('has-error');
+                    document.getElementById('email').setAttribute('aria-invalid', 'true');
+                    document.getElementById('email').setAttribute('aria-describedby', 'email-error');
+                    isValid = false;
+                }
+
+                if (message === '') {
+                    const group = document.getElementById('message').closest('.form-group');
+                    group.classList.add('has-error');
+                    document.getElementById('message').setAttribute('aria-invalid', 'true');
+                    document.getElementById('message').setAttribute('aria-describedby', 'message-error');
+                    isValid = false;
+                }
+
+                if (!consent) {
+                    const group = document.getElementById('consent').closest('.form-group');
+                    group.classList.add('has-error');
+                    document.getElementById('consent').setAttribute('aria-invalid', 'true');
+                    document.getElementById('consent').setAttribute('aria-describedby', 'consent-error');
+                    isValid = false;
+                }
+
+                if (isValid) {
+                    // In production: send to server using fetch() with proper sanitization
+                    formFeedback.textContent = 'Thank you! Your message has been sent. We will get back to you soon.';
+                    formFeedback.style.color = 'green';
+                    contactForm.reset();
+                } else {
+                    formFeedback.textContent = 'Please fix the highlighted fields.';
+                    formFeedback.style.color = 'var(--terracotta)';
+                }
+            });
+
+            // Newsletter form validation
+            const newsletterForm = document.getElementById('newsletter-form');
+            const newsletterFeedback = document.getElementById('newsletter-feedback');
+
+            newsletterForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                newsletterFeedback.textContent = '';
+                const email = document.getElementById('newsletter-email').value.trim();
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (email === '' || !emailRegex.test(email)) {
+                    newsletterFeedback.textContent = 'Please enter a valid email address.';
+                    newsletterFeedback.style.color = 'var(--terracotta)';
+                } else {
+                    newsletterFeedback.textContent = 'Success! You have been subscribed.';
+                    newsletterFeedback.style.color = 'lightgreen';
+                    newsletterForm.reset();
+                }
+            });
+
+            // Dynamic year
+            document.getElementById('year').textContent = new Date().getFullYear();
+        })();
+    </script>
+</body>
+</html>
